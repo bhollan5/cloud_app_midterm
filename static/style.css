@@ -1,0 +1,146 @@
+body {
+  background: #1A1744;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+}
+
+#planet {
+  margin-top: 10%;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background: #5A2744;
+  overflow: hidden;
+}
+
+#shadow {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  opacity: .3;
+}
+
+.cloud {
+  height: 2vw;
+/*   background: white; */
+  position: absolute;
+  border-top-left-radius: 1vw 50%;
+  border-top-right-radius: 1vw 50%;
+  border-bottom-left-radius: 1vw 50%;
+  border-bottom-right-radius: 1vw 50%;
+  animation: drift 30s linear infinite;
+}
+
+.continent {
+  height: 2vw;
+  background: #7A4764;
+  position: absolute;
+  border-top-left-radius: 1vw 50%;
+  border-top-right-radius: 1vw 50%;
+  border-bottom-left-radius: 1vw 50%;
+  border-bottom-right-radius: 1vw 50%;
+  animation: drift 20s linear infinite;
+}
+
+#cloud1 {
+  width: 8vw;
+  top: 40%;
+  
+}
+
+#clouds {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+/*   border: solid red 1px; */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#land {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+/*   border: solid red 1px; */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+@keyframes drift {
+  0% {
+    left: 150%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  min-width: 40vw;
+  min-height: 5vw;
+  border: solid #4A7764;
+  background: #3A3774;
+  color: white;
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+.optRow {
+  justify-content: center;
+  display: flex;
+}
+
+.opt {
+  padding: 10px;
+  text-align: center;
+}
+
+.num {
+  width: 40px;
+}
+
+input {
+  background-color: #1A1744;
+  color: white;
+  border: none;
+}
+
+button {
+  background: #1A1744;
+  margin: 10px;
+  color: white;
+  border: solid 4px #5A2744;
+}
+button:hover {
+  background:  white;
+  color: #1A1744;
+}
+
+#planetName {
+  position: absolute;
+  border: solid 1px white;
+  min-height: 25px;
+  min-width: 200px;
+  top: -50px;
+  color: white;
+}
+
+#dispControls {
+  position: absolute;
+  left: -400px;
+  top: 0px;
+  
+  border: solid #4A7764;
+  background: #3A3774;
+  color: white;
+  font-family: sans-serif;
+  padding: 1em;
+}
