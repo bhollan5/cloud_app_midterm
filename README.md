@@ -7,8 +7,8 @@ First, a disclaimer: This was made for a class project, so it's not beautiful co
 
 Here's how you can get the project running, if you want: 
 
-1. Clone the repo: `https://github.com/bhollan5/cloud_app_midterm.git`
-2. CD into the directory: `https://github.com/bhollan5/cloud_app_midterm.git`
+1. Clone the repo: `git clone https://github.com/bhollan5/cloud_app_midterm.git`
+2. CD into the directory: `cd cloud_app_midterm`
 3. Run `pip install bottle` (if you don't have `pip`, you'll need to get it!)
 4. Make sure you have Python installed
 5. Make an account on (firebase)[firebase.google.com], make a new project, copy the config JSON for a web version of your project, and replace my config JSON in `static/planets.js` (Sorry, i'm not giving you access to my DB).
